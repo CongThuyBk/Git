@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <style>
+        .h1 {
+            font-size: 14px;
+        }
+        .h2 {
+            font-size: 12px;
+        }
+        * {
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .col_left {
+            width: 40%;
+            margin-top: 30px;
+            padding-left: 200px;
+            line-height: 150%;
+        }
+
+        .col_right {
+            width: 60%;
+            margin-top: 80px;
+            padding-right: 50px;
+        }
+
+        .col {
+            float: left;
+        }
+
+        .row::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .button {
+            background-color: rgb(42, 162, 162);
+            color: aliceblue;
+            font-size: 14px;
+            display:block;
+            width:fit-content;
+        }
+        .form {
+            padding:5px;
+            font-size: 12px;
+            outline:none;
+            width:100%;
+        }
+        .thongtin {
+            font-size: 12px;
+            color:rgb(174, 171, 169);
+            text-decoration: none;
+            /* sao ko bỏ dc gạch chân trong email va dien thoại */
+        }
+        .ico {
+            color: rgb(180, 177, 177);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col col_left">
+            <h1><b>CONTACT US</h1></b>
+            <h2><b>Contact Info</h2></b>
+            <i class="icofont-google-map ico"></i><span class="thongtin">321 Awesome Street</span><br>
+
+            <i class="icofont-envelope ico"></i><a href="mailTo:info@companyname.com"><span class="thongtin">info@companyname.com</a></span><br>
+            <i class="icofont-phone ico"></i><a href="tell:+18001231234"><span class="thongtin">+18001231234</a></span>
+        </div>
+        <div class="col col_right">
+            <p><b>
+                    <h2>Having Any Query!Or Book an appointment</h2>
+                </b></p>
+            <div class="form">
+                <input class="form thongtin" type="text" placeholder="Your Name"><br>
+                <input class="form" type="mail thongtin" placeholder="Your Email"><br>
+                <input class="form" type="text thongtin" placeholder="Subject"><br>
+                <textarea class="form thongtin" rows="5" placeholder="Messenger"></textarea><br>
+            </div>
+            <button class="button">Send Message</button>
+        </div>
+    </div>
+</body>
+
+</html>
